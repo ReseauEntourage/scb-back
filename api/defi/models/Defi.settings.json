@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "defis",
+  "info": {
+    "name": "defi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "richtext"
+    },
+    "parcours": {
+      "collection": "parcours",
+      "via": "defis"
+    }
+  }
+}

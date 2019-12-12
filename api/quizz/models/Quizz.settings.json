@@ -1,0 +1,58 @@
+{
+  "connection": "default",
+  "collectionName": "quizzes",
+  "info": {
+    "name": "quizz",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "titre": {
+      "type": "richtext"
+    },
+    "bonne_reponse": {
+      "enum": [
+        "reponse_un",
+        "reponse_deux",
+        "reponse_trois"
+      ],
+      "type": "enumeration",
+      "default": "reponse_un"
+    },
+    "reponse_un": {
+      "type": "string"
+    },
+    "reponse_deux": {
+      "type": "string"
+    },
+    "reponse_trois": {
+      "type": "string"
+    },
+    "explication": {
+      "type": "richtext"
+    },
+    "ordre": {
+      "type": "string"
+    },
+    "parcour": {
+      "model": "parcours",
+      "via": "quizzes"
+    },
+    "chapitre": {
+      "default": "Comprendre",
+      "enum": [
+        "Comprendre",
+        "Changer",
+        "Agir"
+      ],
+      "type": "enumeration"
+    }
+  }
+}

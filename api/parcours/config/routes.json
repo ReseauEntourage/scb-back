@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/parcours",
+      "handler": "Parcours.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/parcours/count",
+      "handler": "Parcours.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/parcours/:id",
+      "handler": "Parcours.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/parcours",
+      "handler": "Parcours.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/parcours/:id",
+      "handler": "Parcours.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/parcours/:id",
+      "handler": "Parcours.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

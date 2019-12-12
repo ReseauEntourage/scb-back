@@ -1,0 +1,82 @@
+{
+  "connection": "default",
+  "collectionName": "parcours",
+  "info": {
+    "name": "parcours",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "couleur": {
+      "type": "string"
+    },
+    "personnage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "url_slug": {
+      "type": "string"
+    },
+    "card_personnage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "couleur_2": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "character_name": {
+      "type": "string"
+    },
+    "background_mobile": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "defis": {
+      "collection": "defi",
+      "via": "parcours",
+      "dominant": true
+    },
+    "background_desktop": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "textes": {
+      "collection": "texte",
+      "dominant": true,
+      "via": "parcours"
+    },
+    "videos": {
+      "collection": "video",
+      "via": "parcour"
+    },
+    "quotes": {
+      "collection": "quote",
+      "via": "parcours"
+    },
+    "entetes": {
+      "collection": "entete",
+      "via": "parcour"
+    },
+    "quizzes": {
+      "collection": "quizz",
+      "via": "parcour"
+    }
+  }
+}
