@@ -110,3 +110,5 @@ coverage
 exports
 .cache
 build
+
+!mock/scb_developpment.sql
