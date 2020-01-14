@@ -34,11 +34,11 @@ $ mysql.server start
 $ mysql -uroot -proot
 
 # Create database
-mysql> CREATE DATABASE scb_developpment;
-mysql> exti;
+mysql> CREATE DATABASE scb_development;
+mysql> exit;
 
 # Import database
-$ mysql -uroot -proot < ./mock/scb_developpment.sql > ./mock/scb_developpment.log
+$ mysql -uroot -proot < ./mock/scb_development.sql > ./mock/scb_develppment.log
 ```
 
 - import images

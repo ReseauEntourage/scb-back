@@ -111,4 +111,4 @@ exports
 .cache
 build
 
-!mock/scb_developpment.sql
+!mock/scb_development.sql

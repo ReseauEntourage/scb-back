@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 50638
  Source Host           : localhost:3306
- Source Schema         : scb_developpment
+ Source Schema         : scb_development
 
  Target Server Type    : MySQL
  Target Server Version : 50638
@@ -20,7 +20,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for conclusions
 -- ----------------------------
-USE scb_developpment;
+USE scb_development;
 
 DROP TABLE IF EXISTS `conclusions`;
 CREATE TABLE `conclusions` (
