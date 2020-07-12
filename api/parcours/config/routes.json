@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/parcours/:id",
-      "handler": "Parcours.destroy",
+      "handler": "Parcours.delete",
       "config": {
         "policies": []
       }
