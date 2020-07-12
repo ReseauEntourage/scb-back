@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_quotes",
+  "info": {
+    "name": "quote",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "character": {
+      "type": "component",
+      "repeatable": false,
+      "component": "characters.character",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chapitres",
+      "handler": "chapitre.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chapitres/count",
+      "handler": "chapitre.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chapitres/:id",
+      "handler": "chapitre.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chapitres",
+      "handler": "chapitre.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chapitres/:id",
+      "handler": "chapitre.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chapitres/:id",
+      "handler": "chapitre.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "parcours",
   "info": {
-    "name": "parcours",
+    "name": "parcour",
     "description": ""
   },
   "options": {
@@ -14,69 +14,43 @@
     "comment": ""
   },
   "attributes": {
-    "Titre": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
       "type": "string"
     },
-    "couleur": {
-      "type": "string"
-    },
-    "personnage": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "url_slug": {
-      "type": "string"
-    },
-    "card_personnage": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "couleur_2": {
+    "title_slug": {
       "type": "string"
     },
     "duration": {
       "type": "integer"
     },
-    "character_name": {
-      "type": "string"
-    },
     "background_mobile": {
       "model": "file",
       "via": "related",
-      "plugin": "upload"
-    },
-    "defis": {
-      "collection": "defi",
-      "via": "parcours",
-      "dominant": true
+      "plugin": "upload",
+      "required": false
     },
     "background_desktop": {
       "model": "file",
       "via": "related",
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
-    "textes": {
-      "collection": "texte",
-      "dominant": true,
+    "character": {
+      "type": "component",
+      "repeatable": false,
+      "component": "characters.character"
+    },
+    "chapitres": {
+      "via": "parcour",
+      "collection": "chapitre"
+    },
+    "defis": {
+      "collection": "defi",
       "via": "parcours"
-    },
-    "videos": {
-      "collection": "video",
-      "via": "parcour"
-    },
-    "quotes": {
-      "collection": "quote",
-      "via": "parcours"
-    },
-    "entetes": {
-      "collection": "entete",
-      "via": "parcour"
-    },
-    "quizzes": {
-      "collection": "quizz",
-      "via": "parcour"
     }
   }
 }

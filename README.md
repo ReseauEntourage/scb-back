@@ -50,3 +50,6 @@ $ mysql -uroot -proot < ./mock/scb_development.sql > ./mock/scb_develppment.log
 > npm run develop
 
 - Connect to admin console on http://localhost:1337/admin
+
+// user : Vaite
+// mdp: Vaite_scb

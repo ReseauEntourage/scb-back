@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "components_characters_characters",
+  "info": {
+    "name": "character",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "speech": {
+      "type": "richtext",
+      "required": true
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

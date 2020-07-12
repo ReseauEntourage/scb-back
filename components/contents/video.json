@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_videos",
+  "info": {
+    "name": "video",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

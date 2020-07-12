@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "chapitres",
+  "info": {
+    "name": "chapitre"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "character": {
+      "type": "component",
+      "repeatable": false,
+      "component": "characters.character"
+    },
+    "parcour": {
+      "model": "parcours",
+      "via": "chapitres"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "chapitre"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title_slug": {
+      "type": "string"
+    }
+  }
+}

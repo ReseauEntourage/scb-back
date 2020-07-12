@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "video",
+        "quote",
+        "survey"
+      ],
+      "required": true,
+      "default": "text"
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "contents.quote",
+        "contents.text",
+        "contents.video",
+        "contents.survey"
+      ],
+      "required": true,
+      "max": 1,
+      "min": 1
+    },
+    "chapitre": {
+      "via": "articles",
+      "model": "chapitre"
+    },
+    "title_slug": {
+      "type": "string"
+    }
+  }
+}

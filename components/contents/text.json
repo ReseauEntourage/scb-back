@@ -1,0 +1,15 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_texts",
+  "info": {
+    "name": "text",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

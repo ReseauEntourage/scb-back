@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "survey",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "response": {
+      "type": "component",
+      "repeatable": true,
+      "component": "responses.response"
+    },
+    "explanation": {
+      "type": "richtext"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_contents_surveys"
+}

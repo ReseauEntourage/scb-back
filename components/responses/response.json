@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_quizz_responses",
+  "info": {
+    "name": "response",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "isAnswer": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

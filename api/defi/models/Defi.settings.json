@@ -11,15 +11,18 @@
     "comment": ""
   },
   "attributes": {
-    "titre": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "contenu": {
-      "type": "richtext"
+    "content": {
+      "type": "richtext",
+      "required": true
     },
     "parcours": {
+      "via": "defis",
       "collection": "parcours",
-      "via": "defis"
+      "dominant": true
     }
   }
 }
