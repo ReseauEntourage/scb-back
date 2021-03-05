@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "parcours",
   "info": {
@@ -11,7 +12,8 @@
       "created_at",
       "updated_at"
     ],
-    "comment": ""
+    "comment": "",
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -45,12 +47,16 @@
       "component": "characters.character"
     },
     "chapitres": {
-      "via": "parcour",
-      "collection": "chapitre"
+      "collection": "chapitre",
+      "via": "parcour"
     },
     "defis": {
       "collection": "defi",
       "via": "parcours"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }

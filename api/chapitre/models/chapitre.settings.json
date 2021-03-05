@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "chapitres",
   "info": {
@@ -23,8 +24,8 @@
       "component": "characters.character"
     },
     "parcour": {
-      "model": "parcours",
-      "via": "chapitres"
+      "via": "chapitres",
+      "model": "parcours"
     },
     "articles": {
       "collection": "article",
