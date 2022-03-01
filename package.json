@@ -22,7 +22,7 @@
     "lodash": "^4.17.5",
     "mysql": "2.17.1",
     "pg": "^7.10.0",
-    "strapi": "3.3.4",
+    "strapi": "3.6.8",
     "strapi-admin": "3.3.4",
     "strapi-connector-bookshelf": "3.3.4",
     "strapi-plugin-content-manager": "3.3.4",
